@@ -13,8 +13,11 @@ function App() {
   
   return (
     <div className="App">
-      <div className="App">
-        
+      <div className="cardcontainer">
+
+      </div>
+      <div className="btnContainer">
+        <button></button>
       </div>
       
     </div>
