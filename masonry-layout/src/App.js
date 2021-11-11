@@ -1,4 +1,5 @@
-import lReact, { useState } from 'react';
+import React, { useState } from 'react';
+import Card from './components/card';
 import './App.css';
 
 function App() {
@@ -14,10 +15,11 @@ function App() {
   return (
     <div className="App">
       <div className="cardcontainer">
-
+        <Card />
       </div>
       <div className="btnContainer">
-        <button></button>
+        <button>Remove</button>
+        <button>Add</button>
       </div>
       
     </div>
