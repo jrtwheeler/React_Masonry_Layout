@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <div className="cardcontainer">
-        <Card />
+        <Card images={images} />
       </div>
       <div className="btnContainer">
         <button>Remove</button>
