@@ -14,7 +14,7 @@ function App() {
 
   const getNewImages = () => {
     setImages{[...images, {
-      url: "https://source.unsplash.com/random/"
+      url: "https://source.unsplash.com/random/${Math.floor(Math.random() * 100)}"
     }]}
   }
   
@@ -25,7 +25,7 @@ function App() {
       </div>
       <div className="btnContainer">
         <button>Remove</button>
-        <button>Add</button>
+        <button onClick={getNewImages}>Add</button>
       </div>      
     </section>
   );
