@@ -13,10 +13,14 @@ function App() {
   ]);
 
   const getNewImages = () => {
-    setImages{[...images, {
+    setImages([...images, {
       url: "https://source.unsplash.com/random/${Math.floor(Math.random() * 100)}"
-    }]}
-  }
+    }]);
+  };
+
+  const removeImages = () => {
+    setImages(images.slice(0, -1));
+  };
   
   return (
       <section className="hero">
@@ -24,11 +28,11 @@ function App() {
         <Card images={images} />
       </div>
       <div className="btnContainer">
-        <button>Remove</button>
+        <button onClick={removeImages}>Remove</button>
         <button onClick={getNewImages}>Add</button>
       </div>      
     </section>
   );
-}
+};
 
 export default App;
