@@ -14,7 +14,7 @@ function App() {
 
   const getNewImages = () => {
     setImages([...images, {
-      url: "https://source.unsplash.com/random/${Math.floor(Math.random() * 100)}"
+      url: `https://source.unsplash.com/random/${Math.floor(Math.random() * 100)}`
     }]);
   };
 
