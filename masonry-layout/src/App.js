@@ -13,16 +13,15 @@ function App() {
   ])
   
   return (
-    <div className="App">
-      <div className="cardcontainer">
+      <section className="hero">
+      <div className="cardContainer">
         <Card images={images} />
       </div>
       <div className="btnContainer">
         <button>Remove</button>
         <button>Add</button>
-      </div>
-      
-    </div>
+      </div>      
+    </section>
   );
 }
 

@@ -8,9 +8,8 @@ const Card = ({images}) => {
                 <div 
                 className="card"
                 key={index}
-                style={{background}}
+                style={{background: 'url("${img.url}") no-repeat center/cover'}}
                 >
-                    
                 </div>
             ))}
         </>
