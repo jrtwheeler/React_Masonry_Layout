@@ -10,7 +10,13 @@ function App() {
     {url: "https://source.unsplash.com/random/4"},
     {url: "https://source.unsplash.com/random/5"},
     {url: "https://source.unsplash.com/random/6"}
-  ])
+  ]);
+
+  const getNewImages = () => {
+    setImages{[...images, {
+      url: "https://source.unsplash.com/random/"
+    }]}
+  }
   
   return (
       <section className="hero">
